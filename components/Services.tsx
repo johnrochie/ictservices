@@ -39,7 +39,7 @@ const services = [
 
 export default function Services() {
   return (
-    <section id="services" className="py-24 bg-[#0a192f]">
+    <section id="services" className="py-24 bg-gray-50">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -48,10 +48,10 @@ export default function Services() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl sm:text-5xl font-bold text-white mb-4">
+          <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
             What We Do
           </h2>
-          <p className="text-xl text-[#8892b0] max-w-2xl mx-auto">
+          <p className="text-xl text-gray-5008892b0] max-w-2xl mx-auto">
             Comprehensive IT services designed to keep your business moving forward
           </p>
         </motion.div>
@@ -73,19 +73,19 @@ export default function Services() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 whileHover={{ y: -5 }}
-                className="group p-8 rounded-2xl bg-[#112240] border border-[#de1352]/20 hover:border-[#de1352]/40 backdrop-blur-md transition-all duration-300 hover:shadow-2xl hover:shadow-[#de1352]/20"
+                className="group p-8 rounded-2xl bg-white border border-[#de1352]/20 hover:border-[#de1352]/40 backdrop-blur-md transition-all duration-300 hover:shadow-2xl hover:shadow-[#de1352]/20"
               >
                 <motion.div
                   whileHover={{ scale: 1.1 }}
                   transition={{ duration: 0.2 }}
                   className="w-14 h-14 rounded-xl bg-gradient-to-br from-[#de1352] to-[#291d91d] flex items-center justify-center mb-6 transition-transform"
                 >
-                  <Icon className="w-7 h-7 text-white" />
+                  <Icon className="w-7 h-7 text-gray-900" />
                 </motion.div>
-                <h3 className="text-xl font-bold text-white mb-3 group-hover:text-[#de1352] transition-colors">
+                <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-gray-500de1352] transition-colors">
                   {service.title}
                 </h3>
-                <p className="text-[#8892b0] leading-relaxed">
+                <p className="text-gray-5008892b0] leading-relaxed">
                   {service.description}
                 </p>
               </motion.div>
@@ -103,10 +103,10 @@ export default function Services() {
         >
           <div className="flex flex-col md:flex-row items-center justify-between gap-8">
             <div className="flex-1">
-              <h3 className="text-2xl font-bold text-white mb-2">
+              <h3 className="text-2xl font-bold text-gray-900 mb-2">
                 Partnered with Industry Leaders
               </h3>
-              <p className="text-[#8892b0]">
+              <p className="text-gray-5008892b0]">
                 We work directly with the world's biggest and most innovative manufacturers
               </p>
             </div>
@@ -114,7 +114,7 @@ export default function Services() {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               href="#contact"
-              className="inline-flex items-center gap-2 px-6 py-3 bg-[#de1352] hover:bg-[#291d91d] text-[#0a192f] rounded-full font-semibold transition-all shadow-lg shadow-[#de1352]/20"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-[#de1352] hover:bg-[#291d91d] text-gray-5000a192f] rounded-full font-semibold transition-all shadow-lg shadow-[#de1352]/20"
             >
               Learn More
             </motion.a>
