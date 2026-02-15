@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Phone, Mail, MapPin, Facebook, Twitter, Linkedin } from "lucide-react";
 
 const footerLinks = [
@@ -22,14 +23,13 @@ export default function Footer() {
           {/* Company Info */}
           <div>
             <div className="flex items-center gap-3 mb-6">
-              <div
-                className="w-10 h-10 rounded-lg flex items-center justify-center"
-                style={{
-                  background: 'linear-gradient(135deg, #df1454, #ec87a7)'
-                }}
-              >
-                <span className="text-white font-bold text-lg">ICT</span>
-              </div>
+              <Image
+                src="/logo.jpg"
+                alt="ICT Services Logo"
+                width={120}
+                height={60}
+                className="h-10 w-auto"
+              />
               <div className="text-xl font-bold text-white">
                 ICT Services
               </div>

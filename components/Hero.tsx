@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { ArrowRight, Phone, Mail, MapPin } from "lucide-react";
 
 export default function Hero() {
@@ -16,6 +17,18 @@ export default function Hero() {
       <div className="absolute bottom-20 left-20 w-72 h-72 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s', backgroundColor: 'rgba(236, 135, 167, 0.1)' }} />
 
       <div className="relative max-w-7xl mx-auto px-6 lg:px-8 text-center z-10">
+        {/* Logo */}
+        <div className="mb-12">
+          <Image
+            src="/logo.jpg"
+            alt="ICT Services Logo"
+            width={200}
+            height={100}
+            className="h-12 w-auto md:h-16 mx-auto"
+            priority
+          />
+        </div>
+
         <div className="animate-fade-in">
           <h1 className="text-5xl sm:text-7xl font-bold text-slate-900 leading-tight mb-6">
             Ireland's Foremost

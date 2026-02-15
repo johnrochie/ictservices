@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Image from "next/image";
 import { Menu, X, Phone, Mail } from "lucide-react";
 
 export default function Nav() {
@@ -30,14 +31,14 @@ export default function Nav() {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <a href="#" className="flex items-center gap-3">
-            <div
-              className="w-10 h-10 rounded-lg flex items-center justify-center"
-              style={{
-                background: 'linear-gradient(135deg, #df1454, #ec87a7)'
-              }}
-            >
-              <span className="text-white font-bold text-lg">ICT</span>
-            </div>
+            <Image
+              src="/logo.jpg"
+              alt="ICT Services Logo"
+              width={120}
+              height={60}
+              className="h-10 w-auto"
+              priority
+            />
             <div className="text-xl font-bold text-slate-900">
               ICT Services
             </div>
