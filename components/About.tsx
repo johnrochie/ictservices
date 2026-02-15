@@ -1,6 +1,3 @@
-'use client';
-
-import { motion } from 'framer-motion';
 import { Award, Clock, MapPin, Users } from "lucide-react";
 
 const stats = [
@@ -12,91 +9,64 @@ const stats = [
 
 export default function About() {
   return (
-    <section id="about" className="py-24 bg-white">
+    <section id="about" className="py-24 bg-gradient-to-br from-slate-50 to-slate-100">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
-          <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-          >
-            <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6">
+          <div>
+            <h2 className="text-4xl sm:text-5xl font-bold text-slate-900 mb-6">
               Trusted Across Ireland
             </h2>
-            <p className="text-xl text-gray-500ccd6f6] mb-6 leading-relaxed">
+            <p className="text-xl text-slate-600 mb-6 leading-relaxed">
               ICT Services is Ireland's foremost field services, roll-out and IT support company. Our 100+ strong team provides an all-Ireland service — north and south — from nine offices and parts hubs.
             </p>
-            <p className="text-lg text-gray-5008892b0] mb-8 leading-relaxed">
+            <p className="text-lg text-slate-600 mb-8 leading-relaxed">
               We deliver the world's finest IT solutions to some of the biggest names in Irish business. Supported by a network of engineers, an expert back-office team, and meticulous attention to detail, the result is first-class service, rapid response, and around-the-clock dependability.
             </p>
 
-            <motion.div
-              whileHover={{ scale: 1.02 }}
-              className="inline-flex items-center gap-2 px-4 py-2 bg-[#de1352]/10 text-gray-500de1352] rounded-full text-sm font-semibold border border-[#de1352]/20"
-            >
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-semibold">
               <Award className="w-4 h-4" />
               Partnered with Major Global Manufacturers
-            </motion.div>
-          </motion.div>
+            </div>
+          </div>
 
-          <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="grid grid-cols-2 gap-6"
-          >
+          <div className="grid grid-cols-2 gap-6">
             {stats.map((stat, index) => {
               const Icon = stat.icon;
               return (
-                <motion.div
+                <div
                   key={index}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.5, delay: index * 0.1 }}
-                  whileHover={{ y: -5 }}
-                  className="bg-white p-8 rounded-2xl border border-[#de1352]/20 hover:border-[#de1352]/40 backdrop-blur-md transition-all duration-300 hover:shadow-2xl hover:shadow-[#de1352]/20"
+                  className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow"
                 >
-                  <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-[#de1352] to-[#291d91d] flex items-center justify-center mb-4">
-                    <Icon className="w-6 h-6 text-gray-900" />
+                  <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-blue-600 to-teal-600 flex items-center justify-center mb-4">
+                    <Icon className="w-6 h-6 text-white" />
                   </div>
-                  <div className="text-3xl sm:text-4xl font-bold text-gray-900 mb-2">
+                  <div className="text-3xl sm:text-4xl font-bold text-slate-900 mb-2">
                     {stat.value}
                   </div>
-                  <div className="text-gray-5008892b0] text-sm sm:text-base">
+                  <div className="text-slate-600 text-sm sm:text-base">
                     {stat.label}
                   </div>
-                </motion.div>
+                </div>
               );
             })}
-          </motion.div>
+          </div>
         </div>
 
         {/* CTA banner */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.3 }}
-          className="mt-20 p-12 rounded-2xl bg-gradient-to-r from-[#112240] to-[#0f0f0f] border border-[#de1352]/20 backdrop-blur-md text-center"
-        >
-          <h3 className="text-3xl font-bold text-gray-900 mb-4">
+        <div className="mt-20 text-center">
+          <h3 className="text-3xl font-bold text-slate-900 mb-4">
             Ready to Transform Your IT Operations?
           </h3>
-          <p className="text-lg text-gray-5008892b0] max-w-2xl mx-auto mb-8">
+          <p className="text-lg text-slate-600 max-w-2xl mx-auto mb-8">
             Let's discuss how ICT Services can support your business with tailored IT solutions
           </p>
-          <motion.a
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
+          <a
             href="#contact"
-            className="inline-flex items-center gap-2 px-8 py-4 bg-[#de1352] hover:bg-[#291d91d] text-gray-5000a192f] rounded-full font-semibold transition-all shadow-lg shadow-[#de1352]/20"
+            className="inline-flex items-center gap-2 px-8 py-4 bg-slate-900 hover:bg-slate-800 text-white rounded-full font-semibold transition-all hover:scale-105 shadow-lg"
           >
             Get Started
-          </motion.a>
-        </motion.div>
+          </a>
+        </div>
       </div>
     </section>
   );

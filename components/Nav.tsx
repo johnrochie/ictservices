@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { motion } from "framer-motion";
 import { Menu, X, Phone, Mail } from "lucide-react";
 
 export default function Nav() {
@@ -25,91 +24,87 @@ export default function Nav() {
 
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      scrolled ? "bg-white/95 backdrop-blur-md border-b border-[#de1352]/20" : "bg-transparent"
+      scrolled ? "bg-white/95 backdrop-blur-md shadow-lg" : "bg-transparent"
     }`}>
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <motion.a
-            whileHover={{ scale: 1.05 }}
-            href="#"
-            className="flex items-center gap-3"
-          >
-            <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-[#de1352] to-[#291d91d] flex items-center justify-center shadow-lg shadow-[#de1352]/30">
-              <span className="text-gray-5000a192f] font-bold text-lg">ICT</span>
+          <a href="#" className="flex items-center gap-3">
+            <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-blue-600 to-teal-600 flex items-center justify-center">
+              <span className="text-white font-bold text-lg">ICT</span>
             </div>
-            <div className="text-xl font-bold text-gray-900">
+            <div className="text-xl font-bold text-slate-900">
               ICT Services
             </div>
-          </motion.a>
+          </a>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
             {navLinks.map((link) => (
-              <motion.a
+              <a
                 key={link.name}
-                whileHover={{ y: -2 }}
                 href={link.href}
-                className="text-gray-500ccd6f6] hover:text-gray-500de1352] font-medium transition-colors"
+                className="text-slate-700 hover:text-blue-600 font-medium transition-colors"
               >
                 {link.name}
-              </motion.a>
+              </a>
             ))}
-            <motion.a
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
+            <a
               href="#contact"
-              className="inline-flex items-center gap-2 px-6 py-2.5 bg-[#de1352] hover:bg-[#291d91d] text-gray-5000a192f] rounded-full font-medium transition-all shadow-lg shadow-[#de1352]/20"
+              className="inline-flex items-center gap-2 px-6 py-2.5 bg-slate-900 hover:bg-slate-800 text-white rounded-full font-medium transition-all hover:scale-105"
             >
               Get in Touch
-            </motion.a>
+            </a>
           </div>
 
           {/* Mobile menu button */}
-          <motion.button
-            whileTap={{ scale: 0.9 }}
+          <button
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden p-2 rounded-lg bg-white/10 hover:bg-white/20 transition-colors"
+            className="md:hidden p-2 rounded-lg hover:bg-slate-100 transition-colors"
+            aria-label="Toggle menu"
           >
-            {isOpen ? (
-              <X className="w-6 h-6 text-gray-900" />
-            ) : (
-              <Menu className="w-6 h-6 text-gray-900" />
-            )}
-          </motion.button>
+            {isOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
         </div>
 
         {/* Mobile menu */}
-        <motion.div
-          initial={false}
-          animate={{
-            height: isOpen ? "auto" : 0,
-            opacity: isOpen ? 1 : 0
-          }}
-          className="md:hidden overflow-hidden"
-        >
-          <div className="py-6 space-y-4">
+        {isOpen && (
+          <div className="md:hidden py-6 space-y-4 border-t border-slate-200">
             {navLinks.map((link) => (
               <a
                 key={link.name}
                 href={link.href}
                 onClick={() => setIsOpen(false)}
-                className="block text-gray-500ccd6f6] hover:text-gray-500de1352] font-medium transition-colors py-2"
+                className="block py-3 text-slate-700 hover:text-blue-600 font-medium transition-colors"
               >
                 {link.name}
               </a>
             ))}
-            <motion.a
-              whileHover={{ scale: 1.02 }}
-              whileTap={{ scale: 0.98 }}
+            <a
               href="#contact"
               onClick={() => setIsOpen(false)}
-              className="block text-center px-6 py-2.5 bg-[#de1352] hover:bg-[#291d91d] text-gray-5000a192f] rounded-full font-medium transition-all shadow-lg shadow-[#de1352]/20"
+              className="inline-flex items-center gap-2 w-full px-6 py-3 bg-slate-900 hover:bg-slate-800 text-white rounded-full font-medium transition-all"
             >
               Get in Touch
-            </motion.a>
+            </a>
+            <div className="flex gap-4 pt-4 border-t border-slate-200">
+              <a
+                href="tel:+3531XXXXXXXX"
+                className="flex items-center gap-2 px-4 py-2 bg-blue-50 text-blue-700 rounded-full text-sm font-medium"
+              >
+                <Phone size={16} />
+                Call Us
+              </a>
+              <a
+                href="mailto:info@ictservices.ie"
+                className="flex items-center gap-2 px-4 py-2 bg-teal-50 text-teal-700 rounded-full text-sm font-medium"
+              >
+                <Mail size={16} />
+                Email
+              </a>
+            </div>
           </div>
-        </motion.div>
+        )}
       </div>
     </nav>
   );
