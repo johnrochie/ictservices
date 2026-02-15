@@ -33,15 +33,14 @@ export default function Hero() {
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold text-slate-900 leading-tight mb-4 sm:mb-6">
             Ireland's Foremost
             <br className="hidden sm:block" />
-            <span className="text-transparent bg-clip-text" style={{
-              background: 'linear-gradient(to right, #df1454, #ec87a7)'
-            }}>
+            <span className="text-[#df1454]">
               IT Services Partner
             </span>
           </h1>
 
           <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-slate-600 max-w-2xl md:max-w-3xl mx-auto mb-6 sm:mb-8 md:mb-10 lg:mb-12 leading-relaxed">
             100+ expert engineers. 9 nationwide offices. 24/7 support.
+            Delivered with precision and trusted by Ireland's biggest names.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center mb-8 sm:mb-10 md:mb-12 lg:mb-14">
