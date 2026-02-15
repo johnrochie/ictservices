@@ -4,15 +4,15 @@ import { Phone, Mail, MapPin, Facebook, Twitter, Linkedin } from "lucide-react";
 const footerLinks = [
   { name: "Services", href: "#services" },
   { name: "About Us", href: "#about" },
-  { name: "Contact", href: "#contact" },
-  { name: "Careers", href: "#" }
+  { name: "Compliance", href: "#compliance" },
+  { name: "Contact", href: "#contact" }
 ];
 
 const quickLinks = [
   { name: "Support", href: "#" },
   { name: "Case Studies", href: "#" },
-  { name: "Partners", href: "#" },
-  { name: "Privacy Policy", href: "#" }
+  { name: "Partners", href: "#partners" },
+  { name: "Privacy Policy", href: "#compliance" }
 ];
 
 export default function Footer() {

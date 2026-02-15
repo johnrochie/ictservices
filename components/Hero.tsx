@@ -32,10 +32,9 @@ export default function Hero() {
         <div className="animate-fade-in">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold text-slate-900 leading-tight mb-4 sm:mb-6">
             Ireland's Foremost
+            <br />
             <br className="hidden sm:block" />
-            <span className="text-[#df1454]">
-              IT Services Partner
-            </span>
+            IT Services Partner
           </h1>
 
           <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-slate-600 max-w-2xl md:max-w-3xl mx-auto mb-6 sm:mb-8 md:mb-10 lg:mb-12 leading-relaxed">
