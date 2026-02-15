@@ -22,7 +22,12 @@ export default function Footer() {
           {/* Company Info */}
           <div>
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-blue-500 to-teal-500 flex items-center justify-center">
+              <div
+                className="w-10 h-10 rounded-lg flex items-center justify-center"
+                style={{
+                  background: 'linear-gradient(135deg, #df1454, #ec87a7)'
+                }}
+              >
                 <span className="text-white font-bold text-lg">ICT</span>
               </div>
               <div className="text-xl font-bold text-white">
@@ -37,21 +42,33 @@ export default function Footer() {
             <div className="flex gap-4">
               <a
                 href="#"
-                className="w-10 h-10 rounded-full bg-slate-800 hover:bg-blue-600 flex items-center justify-center transition-colors"
+                className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:scale-110 transition-all"
+                style={{
+                  backgroundColor: '#df1454',
+                  transition: 'transform 0.2s ease-in-out'
+                }}
                 aria-label="Facebook"
               >
                 <Facebook size={20} />
               </a>
               <a
                 href="#"
-                className="w-10 h-10 rounded-full bg-slate-800 hover:bg-blue-400 flex items-center justify-center transition-colors"
+                className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:scale-110 transition-all"
+                style={{
+                  backgroundColor: '#ec87a7',
+                  transition: 'transform 0.2s ease-in-out'
+                }}
                 aria-label="Twitter"
               >
                 <Twitter size={20} />
               </a>
               <a
                 href="#"
-                className="w-10 h-10 rounded-full bg-slate-800 hover:bg-blue-700 flex items-center justify-center transition-colors"
+                className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:scale-110 transition-all"
+                style={{
+                  backgroundColor: '#df1454',
+                  transition: 'transform 0.2s ease-in-out'
+                }}
                 aria-label="LinkedIn"
               >
                 <Linkedin size={20} />
@@ -99,7 +116,9 @@ export default function Footer() {
 
             <div className="space-y-4">
               <div className="flex items-start gap-3">
-                <Phone className="w-5 h-5 text-blue-400 mt-0.5" />
+                <Phone className="w-5 h-5 mt-0.5"
+                  style={{ color: '#df1454' }}
+                />
                 <div>
                   <p className="text-sm">+353 1 XXX XXXX</p>
                   <p className="text-sm">+353 1 XXX XXXX</p>
@@ -107,7 +126,9 @@ export default function Footer() {
               </div>
 
               <div className="flex items-start gap-3">
-                <Mail className="w-5 h-5 text-teal-400 mt-0.5" />
+                <Mail className="w-5 h-5 mt-0.5"
+                  style={{ color: '#ec87a7' }}
+                />
                 <div>
                   <p className="text-sm">info@ictservices.ie</p>
                   <p className="text-sm">support@ictservices.ie</p>
@@ -115,7 +136,9 @@ export default function Footer() {
               </div>
 
               <div className="flex items-start gap-3">
-                <MapPin className="w-5 h-5 text-blue-400 mt-0.5" />
+                <MapPin className="w-5 h-5 mt-0.5"
+                  style={{ color: '#df1454' }}
+                />
                 <p className="text-sm">
                   9 offices across Ireland<br />
                   Nationwide coverage

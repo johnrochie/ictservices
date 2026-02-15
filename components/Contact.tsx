@@ -23,8 +23,12 @@ export default function Contact() {
 
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-lg bg-blue-50 flex items-center justify-center flex-shrink-0">
-                    <Phone className="w-6 h-6 text-blue-600" />
+                  <div className="w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0"
+                    style={{ backgroundColor: '#fde8ec' }}
+                  >
+                    <Phone className="w-6 h-6"
+                      style={{ color: '#df1454' }}
+                    />
                   </div>
                   <div>
                     <h4 className="font-semibold text-slate-900 mb-1">Phone</h4>
@@ -34,8 +38,12 @@ export default function Contact() {
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-lg bg-teal-50 flex items-center justify-center flex-shrink-0">
-                    <Mail className="w-6 h-6 text-teal-600" />
+                  <div className="w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0"
+                    style={{ backgroundColor: '#fde8ec' }}
+                  >
+                    <Mail className="w-6 h-6"
+                      style={{ color: '#ec87a7' }}
+                    />
                   </div>
                   <div>
                     <h4 className="font-semibold text-slate-900 mb-1">Email</h4>
@@ -45,8 +53,12 @@ export default function Contact() {
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-lg bg-blue-50 flex items-center justify-center flex-shrink-0">
-                    <MapPin className="w-6 h-6 text-blue-600" />
+                  <div className="w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0"
+                    style={{ backgroundColor: '#fde8ec' }}
+                  >
+                    <MapPin className="w-6 h-6"
+                      style={{ color: '#df1454' }}
+                    />
                   </div>
                   <div>
                     <h4 className="font-semibold text-slate-900 mb-1">Locations</h4>
@@ -95,7 +107,7 @@ export default function Contact() {
                   type="text"
                   id="name"
                   placeholder="Your full name"
-                  className="w-full px-4 py-3 rounded-lg border border-slate-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition-all outline-none"
+                  className="w-full px-4 py-3 rounded-lg border border-slate-300 focus:border-pink-500 focus:ring-2 focus:ring-pink-200 transition-all outline-none"
                   required
                 />
               </div>
@@ -108,7 +120,7 @@ export default function Contact() {
                   type="email"
                   id="email"
                   placeholder="your@email.com"
-                  className="w-full px-4 py-3 rounded-lg border border-slate-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition-all outline-none"
+                  className="w-full px-4 py-3 rounded-lg border border-slate-300 focus:border-pink-500 focus:ring-2 focus:ring-pink-200 transition-all outline-none"
                   required
                 />
               </div>
@@ -121,7 +133,7 @@ export default function Contact() {
                   type="tel"
                   id="phone"
                   placeholder="+353 1 XXX XXXX"
-                  className="w-full px-4 py-3 rounded-lg border border-slate-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition-all outline-none"
+                  className="w-full px-4 py-3 rounded-lg border border-slate-300 focus:border-pink-500 focus:ring-2 focus:ring-pink-200 transition-all outline-none"
                 />
               </div>
 
@@ -133,14 +145,15 @@ export default function Contact() {
                   id="message"
                   placeholder="Tell us about your IT needs..."
                   rows={5}
-                  className="w-full px-4 py-3 rounded-lg border border-slate-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition-all outline-none resize-none"
+                  className="w-full px-4 py-3 rounded-lg border border-slate-300 focus:border-pink-500 focus:ring-2 focus:ring-pink-200 transition-all outline-none resize-none"
                   required
                 />
               </div>
 
               <button
                 type="submit"
-                className="w-full inline-flex items-center justify-center gap-2 px-8 py-4 bg-slate-900 hover:bg-slate-800 text-white rounded-lg font-semibold transition-all hover:scale-105 shadow-lg"
+                className="w-full inline-flex items-center justify-center gap-2 px-8 py-4 text-white rounded-lg font-semibold transition-all hover:scale-105 shadow-lg"
+                style={{ backgroundColor: '#df1454' }}
               >
                 Send Message
                 <Send className="w-5 h-5" />

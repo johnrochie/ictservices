@@ -11,16 +11,18 @@ export default function Hero() {
         }} />
       </div>
 
-      {/* Decorative circles */}
-      <div className="absolute top-20 right-20 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl animate-pulse" />
-      <div className="absolute bottom-20 left-20 w-72 h-72 bg-teal-500/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }} />
+      {/* Decorative circles - new pink-magenta palette */}
+      <div className="absolute top-20 right-20 w-96 h-96 rounded-full blur-3xl animate-pulse" style={{ backgroundColor: 'rgba(223, 20, 84, 0.1)' }} />
+      <div className="absolute bottom-20 left-20 w-72 h-72 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s', backgroundColor: 'rgba(236, 135, 167, 0.1)' }} />
 
       <div className="relative max-w-7xl mx-auto px-6 lg:px-8 text-center z-10">
         <div className="animate-fade-in">
           <h1 className="text-5xl sm:text-7xl font-bold text-slate-900 leading-tight mb-6">
             Ireland's Foremost
             <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-teal-600">
+            <span className="text-transparent bg-clip-text" style={{
+              background: 'linear-gradient(to right, #df1454, #ec87a7)'
+            }}>
               IT Services Partner
             </span>
           </h1>
@@ -33,7 +35,8 @@ export default function Hero() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <a
               href="#contact"
-              className="inline-flex items-center gap-2 px-8 py-4 bg-slate-900 hover:bg-slate-800 text-white rounded-full font-semibold transition-all hover:scale-105 shadow-lg"
+              className="inline-flex items-center gap-2 px-8 py-4 text-white rounded-full font-semibold transition-all hover:scale-105 shadow-lg"
+              style={{ backgroundColor: '#df1454' }}
             >
               Get in Touch
               <ArrowRight className="w-5 h-5" />
@@ -47,18 +50,18 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Quick contact bar */}
+        {/* Quick contact bar - new pink-magenta accents */}
         <div className="mt-20 flex flex-wrap justify-center gap-8 text-slate-600">
           <div className="flex items-center gap-2">
-            <Phone className="w-5 h-5 text-blue-600" />
+            <Phone className="w-5 h-5" style={{ color: '#df1454' }} />
             <span className="font-medium">24/7 Support</span>
           </div>
           <div className="flex items-center gap-2">
-            <Mail className="w-5 h-5 text-teal-600" />
+            <Mail className="w-5 h-5" style={{ color: '#ec87a7' }} />
             <span className="font-medium">info@ictservices.ie</span>
           </div>
           <div className="flex items-center gap-2">
-            <MapPin className="w-5 h-5 text-blue-600" />
+            <MapPin className="w-5 h-5" style={{ color: '#df1454' }} />
             <span className="font-medium">All-Ireland Coverage</span>
           </div>
         </div>

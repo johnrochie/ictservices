@@ -23,7 +23,9 @@ export default function About() {
               We deliver the world's finest IT solutions to some of the biggest names in Irish business. Supported by a network of engineers, an expert back-office team, and meticulous attention to detail, the result is first-class service, rapid response, and around-the-clock dependability.
             </p>
 
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-semibold">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold"
+              style={{ backgroundColor: '#ec87a7', color: '#df1454' }}
+            >
               <Award className="w-4 h-4" />
               Partnered with Major Global Manufacturers
             </div>
@@ -37,7 +39,12 @@ export default function About() {
                   key={index}
                   className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow"
                 >
-                  <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-blue-600 to-teal-600 flex items-center justify-center mb-4">
+                  <div
+                    className="w-12 h-12 rounded-lg flex items-center justify-center mb-4"
+                    style={{
+                      background: 'linear-gradient(135deg, #df1454, #ec87a7)'
+                    }}
+                  >
                     <Icon className="w-6 h-6 text-white" />
                   </div>
                   <div className="text-3xl sm:text-4xl font-bold text-slate-900 mb-2">
@@ -62,7 +69,8 @@ export default function About() {
           </p>
           <a
             href="#contact"
-            className="inline-flex items-center gap-2 px-8 py-4 bg-slate-900 hover:bg-slate-800 text-white rounded-full font-semibold transition-all hover:scale-105 shadow-lg"
+            className="inline-flex items-center gap-2 px-8 py-4 text-white rounded-full font-semibold transition-all hover:scale-105 shadow-lg"
+            style={{ backgroundColor: '#df1454' }}
           >
             Get Started
           </a>
