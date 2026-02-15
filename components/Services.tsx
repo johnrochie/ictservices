@@ -73,16 +73,16 @@ export default function Services() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 whileHover={{ y: -5 }}
-                className="group p-8 rounded-2xl bg-[#112240] border border-[#00bcd4]/20 hover:border-[#00bcd4]/40 backdrop-blur-md transition-all duration-300 hover:shadow-2xl hover:shadow-[#00bcd4]/20"
+                className="group p-8 rounded-2xl bg-[#112240] border border-[#de1352]/20 hover:border-[#de1352]/40 backdrop-blur-md transition-all duration-300 hover:shadow-2xl hover:shadow-[#de1352]/20"
               >
                 <motion.div
                   whileHover={{ scale: 1.1 }}
                   transition={{ duration: 0.2 }}
-                  className="w-14 h-14 rounded-xl bg-gradient-to-br from-[#00bcd4] to-[#00acc1] flex items-center justify-center mb-6 transition-transform"
+                  className="w-14 h-14 rounded-xl bg-gradient-to-br from-[#de1352] to-[#291d91d] flex items-center justify-center mb-6 transition-transform"
                 >
                   <Icon className="w-7 h-7 text-white" />
                 </motion.div>
-                <h3 className="text-xl font-bold text-white mb-3 group-hover:text-[#00bcd4] transition-colors">
+                <h3 className="text-xl font-bold text-white mb-3 group-hover:text-[#de1352] transition-colors">
                   {service.title}
                 </h3>
                 <p className="text-[#8892b0] leading-relaxed">
@@ -99,7 +99,7 @@ export default function Services() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.5 }}
-          className="mt-12 p-8 rounded-2xl bg-gradient-to-r from-[#0f0f0f] to-[#112240] border border-[#00bcd4]/20 backdrop-blur-md"
+          className="mt-12 p-8 rounded-2xl bg-gradient-to-r from-[#0f0f0f] to-[#112240] border border-[#de1352]/20 backdrop-blur-md"
         >
           <div className="flex flex-col md:flex-row items-center justify-between gap-8">
             <div className="flex-1">
@@ -114,7 +114,7 @@ export default function Services() {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               href="#contact"
-              className="inline-flex items-center gap-2 px-6 py-3 bg-[#00bcd4] hover:bg-[#00acc1] text-[#0a192f] rounded-full font-semibold transition-all shadow-lg shadow-[#00bcd4]/20"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-[#de1352] hover:bg-[#291d91d] text-[#0a192f] rounded-full font-semibold transition-all shadow-lg shadow-[#de1352]/20"
             >
               Learn More
             </motion.a>

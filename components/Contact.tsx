@@ -41,8 +41,8 @@ export default function Contact() {
                   whileHover={{ x: 5 }}
                   className="flex items-start gap-4"
                 >
-                  <div className="w-12 h-12 rounded-lg bg-[#112240] border border-[#00bcd4]/20 flex items-center justify-center flex-shrink-0">
-                    <Phone className="w-6 h-6 text-[#00bcd4]" />
+                  <div className="w-12 h-12 rounded-lg bg-[#112240] border border-[#de1352]/20 flex items-center justify-center flex-shrink-0">
+                    <Phone className="w-6 h-6 text-[#de1352]" />
                   </div>
                   <div>
                     <h4 className="font-semibold text-white mb-1">Phone</h4>
@@ -55,8 +55,8 @@ export default function Contact() {
                   whileHover={{ x: 5 }}
                   className="flex items-start gap-4"
                 >
-                  <div className="w-12 h-12 rounded-lg bg-[#112240] border border-[#00bcd4]/20 flex items-center justify-center flex-shrink-0">
-                    <Mail className="w-6 h-6 text-[#00bcd4]" />
+                  <div className="w-12 h-12 rounded-lg bg-[#112240] border border-[#de1352]/20 flex items-center justify-center flex-shrink-0">
+                    <Mail className="w-6 h-6 text-[#de1352]" />
                   </div>
                   <div>
                     <h4 className="font-semibold text-white mb-1">Email</h4>
@@ -69,8 +69,8 @@ export default function Contact() {
                   whileHover={{ x: 5 }}
                   className="flex items-start gap-4"
                 >
-                  <div className="w-12 h-12 rounded-lg bg-[#112240] border border-[#00bcd4]/20 flex items-center justify-center flex-shrink-0">
-                    <MapPin className="w-6 h-6 text-[#00bcd4]" />
+                  <div className="w-12 h-12 rounded-lg bg-[#112240] border border-[#de1352]/20 flex items-center justify-center flex-shrink-0">
+                    <MapPin className="w-6 h-6 text-[#de1352]" />
                   </div>
                   <div>
                     <h4 className="font-semibold text-white mb-1">Locations</h4>
@@ -90,7 +90,7 @@ export default function Contact() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="p-6 rounded-2xl bg-white/5 border border-[#00bcd4]/20 backdrop-blur-md"
+              className="p-6 rounded-2xl bg-white/5 border border-[#de1352]/20 backdrop-blur-md"
             >
               <h4 className="font-semibold text-white mb-3">Support Hours</h4>
               <div className="space-y-2 text-[#8892b0]">
@@ -100,7 +100,7 @@ export default function Contact() {
                 </div>
                 <div className="flex justify-between">
                   <span>24/7 Critical Support</span>
-                  <span className="font-medium text-[#00bcd4]">Available</span>
+                  <span className="font-medium text-[#de1352]">Available</span>
                 </div>
                 <div className="flex justify-between">
                   <span>Emergency Response</span>
@@ -116,7 +116,7 @@ export default function Contact() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="bg-[#112240] p-8 lg:p-10 rounded-2xl border border-[#00bcd4]/20 backdrop-blur-md"
+            className="bg-[#112240] p-8 lg:p-10 rounded-2xl border border-[#de1352]/20 backdrop-blur-md"
           >
             <h3 className="text-2xl font-bold text-white mb-6">
               Send us a message
@@ -131,7 +131,7 @@ export default function Contact() {
                   type="text"
                   id="name"
                   placeholder="Your full name"
-                  className="w-full px-4 py-3 rounded-lg bg-[#0f0f0f] border border-white/10 focus:border-[#00bcd4] focus:ring-2 focus:ring-[#00bcd4]/20 transition-all outline-none text-white placeholder-[#8892b0]"
+                  className="w-full px-4 py-3 rounded-lg bg-[#0f0f0f] border border-white/10 focus:border-[#de1352] focus:ring-2 focus:ring-[#de1352]/20 transition-all outline-none text-white placeholder-[#8892b0]"
                   required
                 />
               </div>
@@ -144,7 +144,7 @@ export default function Contact() {
                   type="email"
                   id="email"
                   placeholder="your@email.com"
-                  className="w-full px-4 py-3 rounded-lg bg-[#0f0f0f] border border-white/10 focus:border-[#00bcd4] focus:ring-2 focus:ring-[#00bcd4]/20 transition-all outline-none text-white placeholder-[#8892b0]"
+                  className="w-full px-4 py-3 rounded-lg bg-[#0f0f0f] border border-white/10 focus:border-[#de1352] focus:ring-2 focus:ring-[#de1352]/20 transition-all outline-none text-white placeholder-[#8892b0]"
                   required
                 />
               </div>
@@ -157,7 +157,7 @@ export default function Contact() {
                   type="tel"
                   id="phone"
                   placeholder="+353 1 XXX XXXX"
-                  className="w-full px-4 py-3 rounded-lg bg-[#0f0f0f] border border-white/10 focus:border-[#00bcd4] focus:ring-2 focus:ring-[#00bcd4]/20 transition-all outline-none text-white placeholder-[#8892b0]"
+                  className="w-full px-4 py-3 rounded-lg bg-[#0f0f0f] border border-white/10 focus:border-[#de1352] focus:ring-2 focus:ring-[#de1352]/20 transition-all outline-none text-white placeholder-[#8892b0]"
                 />
               </div>
 
@@ -169,7 +169,7 @@ export default function Contact() {
                   id="message"
                   placeholder="Tell us about your IT needs..."
                   rows={5}
-                  className="w-full px-4 py-3 rounded-lg bg-[#0f0f0f] border border-white/10 focus:border-[#00bcd4] focus:ring-2 focus:ring-[#00bcd4]/20 transition-all outline-none resize-none text-white placeholder-[#8892b0]"
+                  className="w-full px-4 py-3 rounded-lg bg-[#0f0f0f] border border-white/10 focus:border-[#de1352] focus:ring-2 focus:ring-[#de1352]/20 transition-all outline-none resize-none text-white placeholder-[#8892b0]"
                   required
                 />
               </div>
@@ -178,7 +178,7 @@ export default function Contact() {
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
                 type="submit"
-                className="w-full inline-flex items-center justify-center gap-2 px-8 py-4 bg-[#00bcd4] hover:bg-[#00acc1] text-[#0a192f] rounded-lg font-semibold transition-all shadow-lg shadow-[#00bcd4]/20"
+                className="w-full inline-flex items-center justify-center gap-2 px-8 py-4 bg-[#de1352] hover:bg-[#291d91d] text-[#0a192f] rounded-lg font-semibold transition-all shadow-lg shadow-[#de1352]/20"
               >
                 Send Message
                 <Send className="w-5 h-5" />

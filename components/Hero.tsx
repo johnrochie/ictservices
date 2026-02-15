@@ -54,7 +54,7 @@ export default function Hero() {
             className="text-5xl sm:text-7xl font-bold text-white leading-tight mb-6"
           >
             Ireland's Foremost{' '}
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#00bcd4] to-[#00acc1]">
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#de1352] to-[#291d91d]">
               IT Services Partner
             </span>
           </motion.h1>
@@ -79,7 +79,7 @@ export default function Hero() {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               href="#contact"
-              className="inline-flex items-center gap-2 px-8 py-4 bg-[#00bcd4] hover:bg-[#00acc1] text-[#0a192f] rounded-full font-semibold transition-all shadow-lg shadow-[#00bcd4]/40"
+              className="inline-flex items-center gap-2 px-8 py-4 bg-[#de1352] hover:bg-[#291d91d] text-[#0a192f] rounded-full font-semibold transition-all shadow-lg shadow-[#de1352]/40"
             >
               Get in Touch
               <ArrowRight className="w-5 h-5" />
@@ -88,7 +88,7 @@ export default function Hero() {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               href="#services"
-              className="inline-flex items-center gap-2 px-8 py-4 border-2 border-[#00bcd4] hover:border-[#00acc1] text-[#00bcd4] hover:text-[#00acc1] rounded-full font-semibold transition-all"
+              className="inline-flex items-center gap-2 px-8 py-4 border-2 border-[#de1352] hover:border-[#291d91d] text-[#de1352] hover:text-[#291d91d] rounded-full font-semibold transition-all"
             >
               Our Services
             </motion.a>
@@ -104,15 +104,15 @@ export default function Hero() {
         >
           <div className="flex flex-wrap justify-center gap-8 text-[#ccd6f6]">
             <div className="flex items-center gap-2">
-              <Phone className="w-5 h-5 text-[#00bcd4]" />
+              <Phone className="w-5 h-5 text-[#de1352]" />
               <span className="font-medium">24/7 Support</span>
             </div>
             <div className="flex items-center gap-2">
-              <Mail className="w-5 h-5 text-[#00bcd4]" />
+              <Mail className="w-5 h-5 text-[#de1352]" />
               <span className="font-medium">info@ictservices.ie</span>
             </div>
             <div className="flex items-center gap-2">
-              <MapPin className="w-5 h-5 text-[#00bcd4]" />
+              <MapPin className="w-5 h-5 text-[#de1352]" />
               <span className="font-medium">All-Ireland Coverage</span>
             </div>
           </div>

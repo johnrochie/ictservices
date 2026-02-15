@@ -33,7 +33,7 @@ export default function About() {
 
             <motion.div
               whileHover={{ scale: 1.02 }}
-              className="inline-flex items-center gap-2 px-4 py-2 bg-[#00bcd4]/10 text-[#00bcd4] rounded-full text-sm font-semibold border border-[#00bcd4]/20"
+              className="inline-flex items-center gap-2 px-4 py-2 bg-[#de1352]/10 text-[#de1352] rounded-full text-sm font-semibold border border-[#de1352]/20"
             >
               <Award className="w-4 h-4" />
               Partnered with Major Global Manufacturers
@@ -57,9 +57,9 @@ export default function About() {
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: index * 0.1 }}
                   whileHover={{ y: -5 }}
-                  className="bg-[#112240] p-8 rounded-2xl border border-[#00bcd4]/20 hover:border-[#00bcd4]/40 backdrop-blur-md transition-all duration-300 hover:shadow-2xl hover:shadow-[#00bcd4]/20"
+                  className="bg-[#112240] p-8 rounded-2xl border border-[#de1352]/20 hover:border-[#de1352]/40 backdrop-blur-md transition-all duration-300 hover:shadow-2xl hover:shadow-[#de1352]/20"
                 >
-                  <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-[#00bcd4] to-[#00acc1] flex items-center justify-center mb-4">
+                  <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-[#de1352] to-[#291d91d] flex items-center justify-center mb-4">
                     <Icon className="w-6 h-6 text-white" />
                   </div>
                   <div className="text-3xl sm:text-4xl font-bold text-white mb-2">
@@ -80,7 +80,7 @@ export default function About() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.3 }}
-          className="mt-20 p-12 rounded-2xl bg-gradient-to-r from-[#112240] to-[#0f0f0f] border border-[#00bcd4]/20 backdrop-blur-md text-center"
+          className="mt-20 p-12 rounded-2xl bg-gradient-to-r from-[#112240] to-[#0f0f0f] border border-[#de1352]/20 backdrop-blur-md text-center"
         >
           <h3 className="text-3xl font-bold text-white mb-4">
             Ready to Transform Your IT Operations?
@@ -92,7 +92,7 @@ export default function About() {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             href="#contact"
-            className="inline-flex items-center gap-2 px-8 py-4 bg-[#00bcd4] hover:bg-[#00acc1] text-[#0a192f] rounded-full font-semibold transition-all shadow-lg shadow-[#00bcd4]/20"
+            className="inline-flex items-center gap-2 px-8 py-4 bg-[#de1352] hover:bg-[#291d91d] text-[#0a192f] rounded-full font-semibold transition-all shadow-lg shadow-[#de1352]/20"
           >
             Get Started
           </motion.a>
