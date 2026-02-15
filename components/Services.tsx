@@ -36,38 +36,38 @@ const services = [
 
 export default function Services() {
   return (
-    <section id="services" className="py-16 sm:py-20 lg:py-24 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12 sm:mb-16">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 mb-4">
+    <section id="services" className="py-12 sm:py-16 lg:py-24 bg-white px-4">
+      <div className="max-w-7xl mx-auto">
+        <div className="text-center mb-8 sm:mb-12">
+          <h2 className="text-2xl sm:text-3xl lg:text-5xl font-bold text-slate-900 mb-3 sm:mb-4">
             What We Do
           </h2>
-          <p className="text-base sm:text-xl text-slate-600 max-w-2xl mx-auto">
+          <p className="text-sm sm:text-base lg:text-xl text-slate-600 max-w-2xl mx-auto">
             Comprehensive IT services designed to keep your business moving forward
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
           {services.map((service, index) => {
             const Icon = service.icon;
             return (
               <div
                 key={index}
-                className="group p-6 sm:p-8 rounded-2xl bg-slate-50 hover:bg-slate-100 border border-slate-200 transition-all duration-300 hover:-translate-y-1"
+                className="p-5 sm:p-6 lg:p-8 rounded-2xl bg-slate-50 hover:bg-slate-100 border border-slate-200 transition-all duration-300 hover:-translate-y-1"
                 style={{
-                  borderBottom: index === 0 ? '3px solid #df1454' : 'none',
+                  borderTop: index === 0 ? '3px solid #df1454' : 'none',
                   cursor: 'pointer'
                 }}
               >
                 <div
-                  className="w-12 h-12 sm:w-14 sm:h-14 rounded-lg flex items-center justify-center mb-4 sm:mb-6 group-hover:scale-110 transition-transform"
+                  className="w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14 rounded-lg flex items-center justify-center mb-3 sm:mb-4 lg:mb-6 group-hover:scale-110 transition-transform"
                   style={{
                     background: 'linear-gradient(135deg, #df1454, #ec87a7)'
                   }}
                 >
-                  <Icon className="w-6 h-6 sm:w-7 sm:h-7 text-white" />
+                  <Icon className="w-5 h-5 sm:w-6 sm:h-6 lg:w-7 lg:h-7 text-white" />
                 </div>
-                <h3 className="text-lg sm:text-xl font-bold text-slate-900 mb-3">
+                <h3 className="text-base sm:text-lg lg:text-xl font-bold text-slate-900 mb-2 sm:mb-3">
                   {service.title}
                 </h3>
                 <p className="text-sm sm:text-base text-slate-600 leading-relaxed">
@@ -78,22 +78,22 @@ export default function Services() {
           })}
         </div>
 
-        {/* Large service card spanning full width */}
-        <div className="mt-8 sm:mt-12 p-6 sm:p-8 rounded-2xl text-white" style={{
+        {/* Large service card spanning full width - stacked on mobile */}
+        <div className="mt-6 sm:mt-8 lg:mt-12 p-5 sm:p-6 lg:p-8 rounded-2xl text-white" style={{
           background: 'linear-gradient(135deg, #df1454, #ec87a7)'
         }}>
-          <div className="flex flex-col md:flex-row items-center justify-between gap-6 sm:gap-8">
-            <div className="flex-1">
-              <h3 className="text-xl sm:text-2xl font-bold mb-2">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-4 sm:gap-6 lg:gap-8">
+            <div className="flex-1 text-center md:text-left">
+              <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-1 sm:mb-2">
                 Partnered with Industry Leaders
               </h3>
-              <p className="text-sm sm:text-base text-white/90 md:text-lg">
+              <p className="text-sm sm:text-base text-white/90">
                 We work directly with the world's biggest and most innovative manufacturers
               </p>
             </div>
             <a
               href="#contact"
-              className="inline-flex items-center gap-2 px-5 sm:px-6 py-2.5 sm:py-3 bg-white hover:bg-slate-100 text-slate-900 rounded-full font-semibold transition-all text-sm sm:text-base"
+              className="inline-flex items-center justify-center gap-2 px-5 sm:px-6 py-2.5 sm:py-3 bg-white hover:bg-slate-100 text-slate-900 rounded-full font-semibold transition-all text-sm sm:text-base w-full sm:w-auto"
             >
               Learn More
             </a>
